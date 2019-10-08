@@ -1,7 +1,18 @@
-var cardOne = "queen";
-var cardTwo = "queen";
-var cardThree = "king";
-var cardFour = "king";
+var cards = ["queen", "queen", "king", "king"];
 
-console.log("User flipped" + cardOne);
-console.log("User flipped" + cardThree);
+var cardOne = cards[0];
+var cardTwo = cards[1];
+var cardThree = cards[2];
+var cardFour = cards[3];
+
+var cardsInPlay = [];
+cardsInPlay.push('cardOne');
+cardsInPlay.push('cardTwo');
+
+if (cardsInPlay.length === 2) {
+	//alert('good to go');
+} else if (cardOne === cardTwo) {
+	alert('O YEAH YOU DID IT');
+} else (cardOne !== cardTwo) {
+	alert('Sorry Sucker - Try Again!')
+}
